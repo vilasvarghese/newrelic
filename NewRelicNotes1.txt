@@ -1,0 +1,1737 @@
+1.	Introduction to New Relic
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	What is New Relic?
+------------------------------------------------------------------------------
+Performance 
+	critical attribute of modern enterprise applications. 
+	Admins must track 
+		application performance as 
+			traffic levels and infrastructure demands shift. 
+	Poor performance 
+		affects customer satisfaction and 
+		business revenue and 
+		can even compromise business governance and regulatory compliance.
+
+	Application performance monitoring platforms, 
+		such as New Relic APM, 
+		follow the behaviors of web and non-web applications 
+		run across the business. 
+		When admins watch the performance of an application over time, 
+			they can 
+				validate and 
+				optimize provisioned resources, 
+				ensure adherence to customer SLAs and 
+				troubleshoot potential issues effectively.
+
+
+New Relic 
+	leading observability platform 
+	provides analytics 
+		help 
+			monitor, 
+			troubleshoot, and 
+			optimize 
+				applications and 
+				infrastructure in real-time. 
+	Comprehensive suite of tools 
+		give you deep 
+			visibility into 
+				performance and 
+				health of your entire technology stack.
+
+Here's a breakdown of what New Relic offers:
+
+	Full-Stack Observability: 
+		New Relic aims to provide a unified view across your entire stack, breaking down silos between different monitoring tools. This includes:
+
+	Application Performance Monitoring (APM): 
+		Deep insights into the performance of your applications, including response times, error rates, transaction traces, database queries, and external service calls. It supports a wide range of programming languages and frameworks.
+	Infrastructure Monitoring: 
+		Visibility into the 
+			health 
+			performance of infrastructure, 
+				including 
+					servers, 
+					containers 
+						Docker and 
+						Kubernetes, 
+					cloud services 
+						AWS, 
+						Azure, 
+						GCP), and 
+					network devices.
+	Digital Experience Monitoring (DEM): 
+		Understanding 
+			end-user experience with your applications, 
+				including 
+					browser performance 
+						(Real User Monitoring - RUM), 
+					synthetic monitoring 
+						(simulating user interactions), and 
+					mobile app monitoring.
+	Log Management: 
+		Centralized collection, 
+			storage, and 
+			analysis of logs 
+				from your 
+					applications and 
+					infrastructure.
+	Distributed Tracing: 
+		Tracking requests as 
+			they propagate through 
+				microservices and 
+				distributed systems, 
+					helping to 
+						pinpoint bottlenecks and 
+						understand dependencies.
+	Database Monitoring: 
+		Insights into 
+			performance of your databases, 
+				including 
+					query performance, 
+					slow queries, and 
+					database health metrics.
+	Network Performance Monitoring (NPM): 
+		Visibility into 
+			network traffic, 
+			latency, and 
+			errors.
+	Real-Time Data and Analytics: 
+		collects and 
+		processes 
+			data in real-time, 
+		quickly identify and respond to issues 
+		powerful dashboards, 
+		visualizations, and 
+		analytical tools to 
+			help you understand trends and patterns in your data.
+
+	Alerting and Notifications: 
+		You can set up customizable alerts 
+			based on various metrics and conditions to be notified 
+				of potential problems before they impact your users.
+
+	AI and Machine Learning: 
+		New Relic leverages AI and machine learning to provide intelligent insights, anomaly detection, and proactive recommendations.
+
+	Integration Ecosystem: New Relic integrates with a wide range of other tools and services in the DevOps ecosystem, such as CI/CD pipelines, collaboration platforms (Slack, Microsoft Teams), and incident management systems (PagerDuty, ServiceNow).
+
+
+
+--
+New Relic APM 
+	software as a service 
+	has a feature set intended to 
+		collect data, 
+		analyze data and 
+		report relevant performance metrics to 
+			IT administrators and other application stakeholders.
+
+This article is part of
+
+Metrics gathering
+	New Relic APM 
+		gathers metrics on web transactions, 
+		including 
+			response time on the web 
+			throughput 
+				requests per minute and 
+			application errors over time
+			metrics on individual HTTP requests. 
+			
+	can 
+		dig into the metrics of 
+			major database applications, 
+				like SQL, 
+			to report 
+				response times and 
+				throughput, 
+				time per query, 
+				slow queries, and 
+			other details that pinpoint SQL statements that might bog down a website.
+
+	New Relic APM 
+		supports 
+			Java and 
+			external environments. 
+	It can collect 
+		Java virtual machine (JVM) metrics, 
+		such as 
+			heap and 
+			non-heap memory, 
+			garbage collection, 
+			class count, 
+			thread pools, 
+			HTTP sessions, and 
+			transactions. 
+		Admins can define 
+			custom instrumentation for 
+				Java applications, 
+				which lets the business look for 
+					specific performance attributes. 
+		External service metrics 
+			collect details about web services; cloud resources, including native AWS, Azure, and GCP services; and other network-based request traffic.
+
+Analytics
+	New Relic APM 
+		provides detailed error analytics 
+		identify the exact error locations and 
+			classify the associated 
+				transactions and 
+				error types. 
+		Admins can filter results to 
+			tease out specific 
+				error details and 
+				attributes for each trace. 
+		A thread profiler 
+			shows the relative activity areas of the application to 
+				locate possible bottlenecks for remediation. 
+		Cross-application tracing 
+			enables analysis of transactions 
+				between 
+					applications and 
+					identifies bottlenecks or 
+						other performance problems 
+							when the monitored application calls an internal or external service. 
+		Deployment tracking capabilities 
+			capture before and 
+			after snapshots of application performance to determine the effects of application or configuration changes.
+
+Alerting and reporting
+	Transaction-Level Alerting: 
+		New Relic APM 
+			allows users to set up alerts 
+				based on the performance of 
+					individual business transactions.
+	Transaction Dashboards: 
+		Users have access to dashboards 
+			provide insights and metrics 
+				specifically related to individual transactions.
+	Topology Maps: 
+		New Relic APM 
+			offers visual representations of the application architecture.
+	SLA Compliance Reports: 
+		The tool provides reports 
+			focused on 
+				tracking and 
+				measuring 
+					adherence to Service Level Agreements.
+	Key Transactions Monitor: 
+		A specific monitoring feature 
+			tracks and 
+			reports on the 
+				most critical business transactions for the application.
+	Configurable Weekly Application Performance Reports: 
+		Users can set up automated weekly reports on application performance to be delivered to stakeholders.
+	SLA Performance Forecasts: 
+		SLA reports can deliver predictions about future performance on a daily, weekly, or monthly schedule.
+	Service Maps: 
+		Visualizations of the application architecture are provided, 
+			specifically including those built on microservices.
+	Detailed Topology: 
+		Service maps show the structure and arrangement of application components.
+	Connection Details: 
+		Service maps illustrate how different elements of the application are connected.
+	Dependency Mapping: 
+		Service maps detail the dependencies between various application elements.
+	Health Status of Elements: 
+		Service maps display the health of each component within the application architecture.
+
+How New Relic works
+	Collects Metrics and Data: 
+		New Relic APM gathers performance-related measurements and information.
+	Targets Web-Based Applications: 
+		It specifically monitors applications accessed via the web.
+	Monitors Associated Applications: 
+		It also collects data from other applications connected to the web-based ones within the enterprise.
+	Receives Data Over the Network: 
+		New Relic APM gets the collected data through network communication.
+	Processes Data: 
+		The platform takes the received raw data and performs processing operations on it.
+	Analyzes Data: 
+		New Relic APM examines the processed data to identify patterns, trends, and issues.
+	User Interface is a Dashboard: 
+		Users interact with the collected and analyzed data through a dashboard-style graphical interface.
+	Stores Data: 
+		New Relic APM persists the collected metrics and data for later viewing and analysis.
+New Relic 
+	Utilizes Agents: 
+		New Relic relies on software components called agents.
+	Small Code Segments: 
+		These agents are described as small pieces of code.
+	Installed in Application or Environment: 
+		Agents are deployed within the application itself or its surrounding environment.
+	Numerous Agents Exist: 
+		A variety of agents are available to handle different types of applications.
+	Wide Range of Application Support: 
+		The agents are designed to work with a broad spectrum of applications.
+	Available in C SDK: 
+		There is an agent provided as a C Software Development Kit.
+	Available in Go: 
+		An agent is available for Go applications.
+	Available in Java: 
+		An agent is available for Java applications.
+	Available in .NET: 
+		An agent is available for .NET applications.
+	Available in Node.js: 
+		An agent is available for Node.js applications.
+	Available in PHP: 
+		An agent is available for PHP applications.
+	Available in Python: 
+		An agent is available for Python applications.
+	Available in Ruby: 
+		An agent is available for Ruby applications.
+
+An example 
+	Agent Collects Performance Details: 
+		A New Relic agent gathers various data related to performance.
+	Collects Code Execution Time: 
+		The agent measures the time the code takes to generate each webpage.
+	Collects Page Load Time: 
+		The agent also tracks how long it takes for webpages to load for users.
+	Administrators Review Details: 
+		Administrators can examine the collected performance data.
+	Identify Performance-Delaying Factors: 
+		Administrators can pinpoint elements that might be slowing down the application.
+	Determine Root of Delays: 
+		The platform helps in finding the underlying causes of performance issues.
+	Dashboards Show Real-Time Issues: 																											
+		Dashboards highlight problems as they are happening.
+	Dashboards Track Trends Over Time: 
+		Dashboards also display performance trends over a period.
+	Corrective Action Taken: 
+		When an issue is found, administrators and developers can implement fixes, such as updating code.
+	Compare Performance Differences: After making changes, performance data can be compared to see the impact of the corrections.
+	Objectively Determine Effect of Changes: This comparison allows for an unbiased assessment of how effective the changes were.
+
+
+					
+					
+Key Concepts:
+----------
+Entities 
+--------
+	fundamental units of monitoring. 
+	can be anything from 
+		applications, 
+		servers, 
+		databases, 
+		custom services. 
+	By understanding entities
+		can effectively navigate 
+			your monitored environment and 
+			gain valuable insights into its performance and health.
+
+
+Entity Types:
+
+	Application: 
+		deployed application
+		e.g. 
+			web app or a microservice.
+	Infrastructure: 
+		Encompasses 
+			physical or 
+			virtual servers, 
+			containers, and 
+			cloud infrastructure.
+	Browser: 
+		Tracks user interactions and 
+		performance metrics on web browsers.
+	Mobile: 
+		Monitors the performance of mobile apps.
+	Synthetic Monitor: 
+		Tracks the performance of custom tests and scripts.
+	Custom Entity: 
+		Allows you to create custom entities to 
+			represent specific components or services.
+Entity Relationships:
+
+	New Relic 
+		automatically establishes relationships between entities 
+			based on their interactions.
+	You can also define custom relationships to 
+		visualize complex dependencies.
+	These relationships help you understand the impact of issues on other parts of your system.
+Entity Attributes:
+
+	Each entity has associated attributes, such as:
+		Name: 
+			A human-readable name.
+		Entity ID: 
+			A unique identifier.
+		Tags: 
+			Keywords used to categorize and filter entities.
+		Relationships: 
+			Links to other entities.
+		Custom Attributes: 
+			Additional attributes you can define.
+Why Entities Matter:
+
+	Improved Troubleshooting: 
+		Quickly identify 
+			root cause of performance issues by 
+				tracing the impact across related entities.
+	Enhanced Visibility: 
+		holistic view of 
+			your entire system's 
+				health and performance.
+	Proactive Monitoring: 
+		Set up 
+			alerts and notifications based on entity-specific metrics and thresholds.
+	Data-Driven Decision Making: 
+		Leverage entity data to optimize your infrastructure and application performance.
+Leveraging New Relic Entities:
+
+	Entity Explorer: 
+		Visually explore your monitored environment and drill down into specific entities.
+	New Relic One: 
+		Utilize the powerful features of New Relic One to analyze entity data and gain insights.
+	Custom Dashboards: 
+		Create custom dashboards to monitor specific entities and their metrics.
+	Alerts and Notifications: 
+		Set up alerts to be notified of critical issues affecting your entities.
+
+By effectively utilizing New Relic entities, you can significantly enhance your monitoring and troubleshooting capabilities, leading to improved system performance and user experience.
+
+Service Map 
+-----------
+	Entity dependencies 
+	-------------------
+Service Map
+
+	The Service Map in New Relic provides a visual representation of your application's architecture, illustrating the relationships and dependencies between different components. It's a powerful tool for understanding how your application functions and identifying potential bottlenecks or performance issues.
+
+
+
+
+
+
+To aid troubleshooting, New Relic APM captures detailed performance data, 
+	lets administrators access and view transaction traces. This feature can associate Apdex problems with application behaviors. In the Transactions page for the desired application from the New Relic APM Overview page, opt to see transactions associated with the lowest Apdex transactions.
+
+
+
+
+New Relic competitors
+	New Relic competitors include AppDynamics, Datadog, Dynatrace, ManageEngine, SolarWinds, Sumo Logic and Splunk Technology. Cloud providers also provide APM-type services, such as Amazon CloudWatch and Azure Monitor. An APM tool can be part of the IT toolset for years, so evaluate each prospective tool carefully -- compare features, benefits and costs -- prior to a final decision.
+
+
+
+
+
+
+
+Use New Relic APM
+	Once the agent starts to report data to the UI successfully, admins can use that data to monitor and enhance application performance.
+
+	First, check the overview of a selected application. Log in to the New Relic site and view the portal, which provides an index of monitored applications. Select the desired application to view an array of charts, tables and reports about the application's performance.
+
+	One noteworthy overview entry is the application's user satisfaction, or Apdex, score. This measures the ratio of satisfactory and unsatisfactory response times. The ratio is presented graphically between zero -- completely unsatisfactory -- and one -- completely satisfactory. Use the application and browser graphs to learn more about user satisfaction details, or review further along the application graph to learn more about transactions that might affect the application's performance.
+
+	Administrators can also use New Relic for application alerting and reporting. Implement policies that detail the reason, criteria, thresholds and responses for an alert condition.
+
+	Alerts 
+		usually start with the creation of a new alert policy. Access alerts through the alerts UI, select Alerts policies, choose Add a policy and then follow the wizard to finish the creation. Then, access the UI to set conditions and thresholds for the selected alert.
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+o	Why use New Relic?
+----------------------------------------------------------------------------------------------------------
+Key Benefits of Using New Relic:
+
+	Improved Application Performance: 
+		Identify and resolve performance bottlenecks quickly.
+	Reduced Downtime: 
+		Proactive 
+			monitoring and 
+			alerting 
+				prevent outages.
+	Faster Troubleshooting: 
+		Pinpoint 
+			root cause of issues more efficiently 
+				with full-stack visibility.
+	Enhanced User Experience: 
+		Optimize application performance to 
+			deliver a better user experience.
+	Data-Driven Decision Making: 
+		Gain insights into your system's behavior to 
+			make informed decisions about 
+				architecture, 
+				scaling, and 
+				optimization.
+	Increased Team Collaboration: 
+		Provides a shared platform for 
+			development, 
+			operations, and 
+			other teams 
+				to understand system health.
+	In essence, New Relic provides a comprehensive platform for observability, enabling teams to understand the behavior of their complex software systems, improve performance, and ensure reliability. It's a valuable tool for organizations embracing DevOps and cloud-native architectures.
+----------------------------------------------------------------------------------------------------------
+o	Overview of New Relic's platform and services
+----------------------------------------------------------------------------------------------------------
+
+Introduction to New Relic
+
+New Relic 
+	comprehensive observability platform 
+	provides 
+		real-time 
+			monitoring, 
+			analytics, and 
+			insights into the 
+				performance of 
+					applications, 
+					infrastructure, and 
+					digital customer experiences. 
+	We can 
+		detect, 
+		diagnose, and 
+		resolve 
+			performance issues effectively, 
+		ensuring 
+			high availability and 
+			seamless user experiences.
+
+1. Core Features of New Relic
+
+	New Relic 
+		offers 
+			suite of features to 
+				help organizations 
+					monitor and 
+					optimize software environments:
+	Features include
+	
+
+	1.1. Full-Stack Observability
+
+		New Relic 
+			provides a unified view of an 
+				entire software stack, 
+				including 
+					applications, 
+					infrastructure, logs, and 
+					digital experiences.
+
+	1.2. Telemetry Data Platform
+
+		The platform 
+			collects, 
+			processes, and 
+			visualizes data from 
+				various sources, 
+					including 
+						applications, 
+						infrastructure, and 
+						third-party tools
+							ensure 
+								holistic monitoring.
+
+	1.3. AI-Powered Insights
+
+		With New Relic AI
+			users can 
+				leverage machine learning to 
+					detect 
+						anomalies, 
+						predict failures, and 
+						automate incident responses.
+
+	1.4. OpenTelemetry and Open Source Support
+
+		New Relic integrates with OpenTelemetry 
+			supports open standards for observability, 
+				easier to 
+					ingest and 
+					analyze data.
+
+	2. Application Performance Monitoring (APM)
+
+		APM 
+			a New Relic’s core offerings, 
+			designed to help teams 
+				track application performance in real time.
+
+	2.1. Key Capabilities:
+
+		Transaction Tracing: 
+			Tracks application transactions to 
+				identify performance bottlenecks.
+
+		Error Tracking: 
+			Detect, 
+			categorizes, and 
+			alerts 
+				users about application errors.
+
+		Code-Level Diagnostics: 
+			Deep insights into 
+				application code for 
+					performance optimization.
+
+		Service Maps: 
+			Visualizes 
+				dependencies between application 
+					services and databases.
+
+	2.2. Supported Technologies:
+
+		Languages: 
+			Java, 
+			.NET, 
+			Python, 
+			Node.js, 
+			Ruby, 
+			Go, and 
+			PHP.
+
+		Frameworks: 
+			Spring Boot, 
+			Django, 
+			Express.js, and 
+			more.
+
+		Databases: 
+			MySQL, 
+			PostgreSQL
+			, MongoDB, and 
+			others.
+
+	3. Infrastructure Monitoring
+
+		New Relic's Infrastructure Monitoring 
+			helps maintain system health by 
+				tracking 
+					metrics and 
+					logs from 
+						servers, 
+						containers, and 
+						cloud environments.
+
+		3.1. Key Features:
+
+			Real-Time Metrics: 
+				Monitors 
+					CPU, 
+					memory, 
+					disk, and 
+					network performance.
+
+			Kubernetes & Container Monitoring: 
+				Provides visibility into 
+					containerized environments.
+
+			Cloud Integration: 
+				Supports 
+					AWS, 
+					Azure, and 
+					Google Cloud.
+
+			Custom Dashboards: 
+				Enables users to create 
+					personalized monitoring views.
+
+	4. Log Management
+
+		New Relic’s log management 
+			centralizes log data, 
+			make it easier to 
+				analyze and 
+				troubleshoot 
+					system issues.
+
+	4.1. Features:
+
+		Log Ingestion & Processing: 
+			Collects logs from 
+				various sources.
+
+		Intelligent Querying: 
+			Allows 
+				searching, 
+				filtering, and 
+				analyzing log data.
+
+		Correlation with APM & Infrastructure: 
+			Links logs with 
+				application and 
+				system performance metrics.
+
+		Alerts & Notifications: 
+			Detects anomalies and 
+			sends alerts via 
+				Slack, 
+				PagerDuty, or 
+				email.
+
+	5. Synthetic Monitoring
+
+		Synthetic Monitoring 
+			simulates 
+				user interactions with 
+					web applications to 
+						test 
+							performance and 
+							availability.
+
+		5.1. Benefits:
+
+			Automated Uptime Checks: 
+				Ensures applications are running smoothly.
+
+			Multi-Location Testing: 
+				Tests user experiences from different geographic locations.
+
+			Scripted Browsers: 
+				Runs automated scripts to simulate complex user flows.
+
+			Performance Benchmarks: 
+				Helps compare current performance with historical data.
+
+	6. Distributed Tracing
+
+		Distributed Tracing 
+			provides visibility into 
+				microservices and 
+				API interactions, 
+					help teams 
+						debug 
+							latency and 
+							failures in distributed environments.
+
+		6.1. Features:
+
+		Trace Collection & Visualization: 
+			Tracks service calls and dependencies.
+
+		Root Cause Analysis: 
+			Identifies the source of slowdowns.
+
+		Cross-Service Insights: 
+			Understands interactions between multiple services.
+
+		Integration with OpenTelemetry: 
+			Supports open-source tracing standards.
+
+	7. Security and Compliance
+
+		New Relic 
+			ensures 
+				data security and 
+				compliance 
+					with industry regulations.
+
+		7.1. Security Features:
+
+			Role-Based Access Control (RBAC): 
+				Restricts user permissions.
+
+			Data Encryption: 
+				Ensures secure storage and transmission of telemetry data.
+
+			Compliance Standards: 
+				Adheres to GDPR, SOC 2, ISO 27001, and HIPAA.
+
+			Audit Logs: 
+				Provides detailed records of user activities.
+
+	8. Integrations and Extensibility
+
+		New Relic 
+			integrates with various tools and platforms 
+				to enhance observability.
+
+		8.1. Supported Integrations:
+
+		Cloud Providers: 
+			AWS, 
+			Azure, 
+			Google Cloud.
+
+		DevOps & CI/CD Tools: 
+			Jenkins, 
+			GitHub Actions, 
+			GitLab CI/CD.
+
+		Monitoring & Alerting: 
+			Prometheus, 
+			Grafana, 
+			Slack, 
+			PagerDuty.
+
+		Logging & Security: 
+			Fluentd, 
+			Splunk, 
+			Datadog.
+
+	9. Pricing and Licensing
+
+		New Relic offers flexible pricing models to suit different business needs.
+
+		9.1. Pricing Tiers:
+
+			Free Plan: 
+				Limited observability features for small teams.
+
+			Standard Plan: 
+				Advanced monitoring for growing businesses.
+
+			Pro & Enterprise Plans: 
+				Full observability with AI-powered insights, custom dashboards, and enterprise-grade support.
+
+
+----------------------------------------------------------------------------------------------------------
+2.	Getting Started with New Relic
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Setting up a New Relic account
+----------------------------------------------------------------------------------------------------------
+Phase 1: Account Creation and Setup
+
+Sign Up for a New Relic Account:
+
+Go to the New Relic website (https://newrelic.com/).
+Click on "Sign Up" or "Get Started for Free."
+New Relic typically offers a free tier with limitations
+	excellent for learning and small projects. 
+	Choose the plan that best suits your needs.
+	Follow the on-screen instructions to create your account. 
+	You'll likely need to provide your 
+		name, 
+		email address, 
+		company details (if applicable), and create a password.
+Initial Login and Welcome:
+
+	Once your account is created, 
+		log in to the New Relic platform.
+	You'll likely be greeted with a welcome screen or a guided setup process. 
+	Pay attention to any introductory information and tutorials offered.
+
+Choose Your Monitoring Goal:
+
+	New Relic will 
+		often ask what you want to monitor 
+		(e.g., applications, infrastructure, digital experience). 
+		Select the area you want to start with.
+Phase 2: Installing and Configuring Agents
+
+	New Relic uses "agents" that you install in your applications and infrastructure to collect performance data and send it to the New Relic platform. The installation process varies depending on what you're monitoring.
+
+	Application Performance Monitoring (APM):
+
+	Identify Your Application's Language/Framework: 
+		New Relic supports a wide range of languages like Java, Python, Node.js, Ruby, PHP, .NET, Go, and more.
+	Follow the Specific Agent Installation Guide: 
+		New Relic provides detailed documentation for each language agent. You'll typically need to:
+	Add a dependency to your project (e.g., using Maven, pip, npm, gem, Composer, NuGet).
+	Configure the agent with your New Relic license key and application name (this is crucial for identifying your data in the platform). Configuration can often be done through environment variables, configuration files, or code.
+	Restart your application.
+	Example (Python - using newrelic package):
+
+
+pip install newrelic
+Then, configure using an environment variable:
+
+
+	NEW_RELIC_LICENSE_KEY="YOUR_LICENSE_KEY" NEW_RELIC_APP_NAME="My Python App" python your_app.py
+	Or using a newrelic.ini configuration file.
+	Infrastructure Monitoring:
+
+		Install the New Relic Infrastructure Agent: 
+			This agent 
+				runs on your servers (physical or virtual) and 
+					collects data about 
+						CPU usage, 
+						memory, 
+						disk I/O, 
+						network traffic, etc.
+		Follow the Installation Guide for Your Operating System: 
+			New Relic 
+				provides specific instructions for 
+					Linux 
+						(various distributions), 
+					Windows, and 
+					macOS. 
+			This usually involves downloading and running an installation script or using package managers.
+		The agent will typically 
+			auto-detect many aspects of your infrastructure. 
+		You might need to configure it with your license key.
+	Digital Experience Monitoring (DEM):
+
+		Real User Monitoring (RUM): 
+			You'll typically add a 
+				JavaScript snippet to the <head> or 
+				just before the </body> tag of your web pages. 
+			New Relic provides this snippet through its UI.
+		Synthetic Monitoring: 
+			You'll configure "monitors" within the New Relic UI to simulate user interactions with your website or APIs at scheduled intervals.
+	Log Management:
+
+		Configure Logging Integrations: 
+			New Relic can collect logs from various sources. You'll need to configure your logging libraries or systems to forward logs to New Relic's logging endpoint, often using a logging forwarder agent (like Fluentd or Fluent Bit) or direct integrations.
+Phase 3: Exploring the New Relic Interface
+
+Once your agents are installed and data starts flowing into New Relic, 
+	familiarize yourself with the platform's interface:
+
+	Overview/Home Page: 
+		Provides a high-level summary of your monitored entities and their health.
+	APM & Services: 
+		performance of your applications. 
+		Explore 
+			transaction traces, 
+			error analytics, 
+			slow queries, and 
+			service maps.
+	Infrastructure: 
+		View the 
+			health and 
+			performance metrics of your servers, 
+				containers, and cloud resources.
+	Browser (RUM): 
+		Analyze 
+			performance of your web pages 
+				from the 
+					end-user perspective, 
+					including page load times, 
+					JavaScript errors, and 
+					geographical performance.
+	Synthetics: 
+		See the results of your 
+			synthetic monitors, 
+			including 
+				uptime and 
+				performance metrics for simulated user journeys.
+	Logs: 
+		Search, 
+		filter, and 
+		analyze your collected logs.
+	Dashboards: 
+		Create custom dashboards to 
+			visualize the metrics that are most important to you.
+	Alerts & AI: 
+		Configure alert conditions and explore insights provided by New Relic's AI.
+	Query Builder (NRQL): 
+		Learn to use New Relic Query Language (NRQL) to query and analyze your data in powerful ways.
+Phase 4: Initial Exploration and Basic Tasks
+
+	Check Application Health: 
+		Navigate to the APM section and look at the overall health status of your applications (e.g., error rates, response times).
+	Investigate Slow Transactions: 
+		Identify transactions with 
+			high response times and 
+			drill down into 
+				transaction traces to see where the time is being spent (e.g., database calls, external services).
+	View Server Metrics: 
+		Go to the Infrastructure section and 
+			check CPU utilization, memory usage, and disk I/O for your servers.
+	Explore Browser Performance: Look at page load times and identify slow-loading resources in the Browser section.
+	Set Up a Basic Alert: Create an alert rule for a critical metric, such as a high error rate in your application or high CPU usage on a server. Configure notifications to be sent to your preferred channel (e.g., email, Slack).
+	Create a Simple Dashboard: Add a few key charts to a personal dashboard to track the health and performance of your most important services.
+	Run a Basic NRQL Query: Open the Query Builder and try a simple query to count the number of errors in your application over the last hour:
+
+
+
+SELECT count(*) FROM TransactionError SINCE 1 hour ago
+Tips for Getting Started:
+
+	Follow the Official Documentation: New Relic has excellent and comprehensive documentation. Refer to it frequently for detailed instructions and explanations.
+	Start Small: Focus on monitoring one application or a small part of your infrastructure initially.
+	Use the Free Tier: Take advantage of the free tier to explore the platform without immediate cost concerns.
+	Watch New Relic Webinars and Tutorials: New Relic often provides valuable educational resources.
+	Join the New Relic Community: Engage with other users to ask questions and learn best practices.
+	Experiment: Don't be afraid to click around and explore the different features of the New Relic platform.
+----------------------------------------------------------------------------------------------------------
+o	Installing New Relic agents
+----------------------------------------------------------------------------------------------------------
+	covered above 
+	
+	lab 
+----------------------------------------------------------------------------------------------------------
+
+Day 2
+o	Configuring New Relic in your application
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+3.	New Relic APM (Application Performance Monitoring)
+----------------------------------------------------------------------------------------------------------
+lab 
+	Spring boot application monitoring 
+		hello world application monitoring 
+----------------------------------------------------------------------------------------------------------
+o	Understanding APM
+----------------------------------------------------------------------------------------------------------
+# **Application Performance Monitoring (APM) Overview**
+
+## **1. Introduction to APM**
+
+Application Performance Monitoring (APM) is a critical component of modern software development and IT operations. APM tools help organizations monitor, diagnose, and optimize application performance, ensuring seamless user experiences and system reliability. By collecting real-time telemetry data, APM enables businesses to identify performance bottlenecks, detect anomalies, and optimize resource usage.
+
+---
+
+## **2. Key Capabilities of APM**
+
+### **2.1. Performance Metrics and Monitoring**
+
+APM tools collect key performance indicators (KPIs) to track application health and efficiency, including:
+
+	- **Response Time**: 
+		Measures the time taken to process a request.
+	- **Throughput**: 
+		Tracks the number of requests processed per second.
+	- **Error Rate**: 
+		Identifies the frequency of application failures.
+	- **Resource Utilization**: 
+		Monitors CPU, memory, and disk usage.
+
+### **2.2. Transaction Tracing**
+
+Transaction tracing provides end-to-end visibility into user requests as they flow through an application. This helps developers:
+
+	- Identify slow database queries, API calls, and application logic.
+	- Trace specific transactions to locate performance bottlenecks.
+	- Analyze dependencies between services and microservices.
+
+### **2.3. Real-Time Anomaly Detection**
+
+Modern APM solutions use machine learning to detect performance anomalies automatically. These systems analyze historical trends to identify unusual spikes in latency, error rates, or resource consumption, triggering alerts for proactive troubleshooting.
+
+### **2.4. Code-Level Diagnostics**
+
+APM tools provide deep insights into application code, enabling developers to pinpoint inefficient functions, memory leaks, and unoptimized algorithms. Features include:
+
+	- **Method-Level Tracing**: Identifies slow functions within application code.
+	- **Profiling and Sampling**: Captures execution details for performance analysis.
+	- **Error Tracking**: Highlights exceptions and stack traces.
+
+---
+
+## **3. APM for Different Architectures**
+
+### **3.1. Traditional Monolithic Applications**
+
+For monolithic applications, APM focuses on identifying slow database queries, inefficient code paths, and resource bottlenecks within a single codebase.
+
+### **3.2. Microservices and Distributed Systems**
+
+Modern applications are often built using microservices, where multiple services communicate via APIs. APM tools offer:
+
+- **Distributed Tracing**: Maps interactions across multiple services.
+- **Service Maps**: Visual representations of dependencies between microservices.
+- **Latency Analysis**: Identifies slow services and inter-service communication issues.
+
+### **3.3. Cloud-Native and Serverless Applications**
+
+For cloud and serverless architectures, APM tools provide:
+
+- **Function-Level Tracing**: Monitors serverless functions (e.g., AWS Lambda, Azure Functions).
+- **Container and Kubernetes Monitoring**: Tracks performance metrics in containerized environments.
+- **Cloud Resource Optimization**: Ensures efficient scaling and cost management.
+
+---
+
+## **4. Benefits of APM**
+
+Implementing APM offers several advantages, including:
+
+- **Faster Issue Resolution**: Detect and fix performance problems quickly.
+- **Enhanced User Experience**: Ensure smooth application performance.
+- **Optimized Infrastructure Costs**: Reduce unnecessary resource consumption.
+- **Improved Developer Productivity**: Gain deep insights into application behavior.
+
+---
+
+## **5. Popular APM Tools**
+
+Several APM tools are available in the market, including:
+
+- **New Relic APM**: Comprehensive monitoring for applications, infrastructure, and logs.
+- **Dynatrace**: AI-driven observability and automation.
+- **Datadog APM**: Cloud-scale application monitoring with distributed tracing.
+- **AppDynamics**: Performance insights with business impact analysis.
+- **Prometheus + Grafana**: Open-source monitoring solutions.
+
+---
+
+## **6. Conclusion**
+
+Application Performance Monitoring is essential for ensuring high-performing, scalable, and reliable software applications. By leveraging APM solutions, businesses can proactively manage performance issues, optimize infrastructure, and deliver excellent user experiences.
+
+"""
+
+# Returning the document name and content for user reference
+document_name, document_content
+
+----------------------------------------------------------------------------------------------------------
+o	Monitoring application performance
+----------------------------------------------------------------------------------------------------------
+
+2. Install the New Relic APM Agent
+New Relic requires an agent installed on your application to collect performance data. Choose the appropriate agent based on your programming language:
+
+2.1. Supported Languages
+New Relic APM supports multiple languages, including:
+
+Java
+.NET
+Node.js
+Python
+Ruby
+Go
+PHP
+
+2.2. Installation Steps (Example: Node.js)
+For a Node.js application:
+
+Install the New Relic agent:
+sh
+
+
+npm install newrelic --save
+ the newrelic.js configuration file to your project.
+Set the New Relic License Key:
+sh
+
+
+export NEW_RELIC_LICENSE_KEY=your_license_key
+Require New Relic at the top of your application’s main file:
+javascript
+
+
+require('newrelic');
+Restart your application:
+sh
+
+
+node app.js
+For other languages, follow New Relic’s documentation.
+
+3. Configure the Application in New Relic
+Go to New Relic One Dashboard → Click APM & Services.
+Click Add an Application and select the language you installed.
+Set up Application Name in the agent config file:
+javascript
+
+
+app_name: ['MyApp']
+Restart your application to apply changes.
+4. Verify Data in New Relic
+Open New Relic One → APM & Services.
+Find your application in the list.
+Click on the application to view:
+Response times
+Transaction traces
+Error rates
+Database performance
+External service calls
+5. Set Up Alerts & Dashboards
+5.1. Create Alerts
+Go to Alerts & AI → Click Create Alert Policy.
+Set conditions (e.g., High response time, Error rate >5%).
+Choose notification channels (Slack, Email, PagerDuty, etc.).
+5.2. Customize Dashboards
+Navigate to Dashboards in New Relic One.
+Click Create a new dashboard.
+Add widgets like Latency, Error Rate, and Throughput.
+6. Enable Distributed Tracing (Optional)
+	If you are using microservices, enable Distributed Tracing to visualize requests across services.
+	Go to APM & Services → Select your application → Enable Distributed Tracing.
+7. Monitor and Optimize Performance
+	Regularly check transaction traces for slow endpoints.
+	Analyze database queries to optimize slow queries.
+	Set up alerting rules for proactive issue detection.
+
+
+
+
+Java
+	lab 
+.NET
+Node.js
+Python
+Ruby
+Go
+PHP
+
+----------------------------------------------------------------------------------------------------------
+Day 3
+
+o	Viewing application metrics (response time, throughput, error rate)
+----------------------------------------------------------------------------------------------------------
+	lab 
+		spring boot 
+----------------------------------------------------------------------------------------------------------
+o	Using APM dashboards
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+
+
+New Relic Infrastructure Monitoring
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Setting up infrastructure monitoring
+----------------------------------------------------------------------------------------------------------
+lab 
+	host configuration 
+		windows 
+		linux 
+		
+----------------------------------------------------------------------------------------------------------
+o	Monitoring servers, containers, and cloud resources
+----------------------------------------------------------------------------------------------------------
+lab 
+	Spring boot 
+	Docker 
+		logs will not come 
+	Cloud resources 
+		already done.
+----------------------------------------------------------------------------------------------------------
+o	Setting alerts for infrastructure anomalies
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+Day 4
+
+4.	New Relic Browser
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Frontend performance monitoring
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Measuring page load times and user interactions
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Using Browser Dashboards
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+
+Day 5
+
+5.	New Relic Synthetics
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Synthetic monitoring (availability monitoring)
+----------------------------------------------------------------------------------------------------------
+lab 
+
+Synthetic monitoring (also known as proactive or availability monitoring) in New Relic allows you to simulate user interactions with your applications and APIs from geographically diverse locations at scheduled intervals. This helps you proactively detect and resolve issues before they impact your real users.
+
+Think of it as having automated testers constantly checking the availability and basic functionality of your critical services.
+
+Key Concepts of New Relic Synthetic Monitoring:
+
+Monitors: These are the core of synthetic monitoring. A monitor defines what you want to test, how often, and from where.
+Monitor Types: New Relic offers various monitor types to simulate different scenarios:
+Ping Monitor: Simple check to verify if a URL is reachable and responds within a specified time.
+Simple Browser Monitor: Loads a web page in a real browser environment and verifies basic elements and performance.
+Browser Monitor (Scripted Browser): Allows you to write more complex scripts using Selenium WebDriver to simulate multi-step user journeys (e.g., logging in, adding items to a cart, checkout).
+API Test Monitor (Scripted API): Enables you to write scripts to test your APIs, including making HTTP requests, validating responses, and asserting specific conditions.
+Multi-step API Monitor: Allows you to define a sequence of API calls to test complex workflows.
+SSL Certificate Monitor: Checks the validity, expiration, and other details of your SSL/TLS certificates.
+DNS Monitor: Verifies the resolution of your domain names.
+  
+Locations: You can choose from a wide range of global locations from which your monitors will run. This helps you understand the availability and performance of your application from different user perspectives.
+Frequency: You can configure how often your monitors will run (e.g., every minute, every 5 minutes, hourly). The frequency impacts the granularity of your availability data and the number of synthetic checks performed.
+Assertions: Within your browser and API monitors, you can define assertions to validate that your application is functioning correctly (e.g., specific text is present on a page, an API returns a specific status code or data).
+Alerting: You can set up alerts based on the results of your synthetic monitors (e.g., if a monitor fails for a certain number of consecutive checks).
+How to Get Started with Availability Monitoring in New Relic:
+
+ Navigate to Synthetics: In your New Relic One platform, go to the "Synthetics" section (usually found under "Programmable Platform").
+
+Create a Monitor: Click on the "Create monitor" button.
+
+Choose a Monitor Type: Select the type of monitor that best suits your needs:
+
+Ping: For basic URL reachability.
+Simple Browser: For basic webpage load and element checks.
+Browser (Scripted Browser): For simulating complex user flows using JavaScript and Selenium WebDriver commands.
+API Test (Scripted API) / Multi-step API: For testing your REST or other APIs.
+SSL Certificate: For monitoring SSL/TLS certificates.
+DNS: For monitoring DNS resolution.
+Configure the Monitor: Fill in the required details based on the monitor type you selected:
+
+Name: Give your monitor a descriptive name.
+URL/Endpoint: Enter the URL of the webpage or API endpoint you want to test.
+Locations: Select one or more locations from which the monitor should run. Choose locations that are geographically relevant to your users.
+Frequency: Set the interval at which the monitor should execute.
+Authentication (if required): Configure any necessary authentication credentials (e.g., basic auth, API keys).
+Script (for Scripted Browser and API Monitors): If you chose a scripted monitor type, you'll need to write JavaScript code using the New Relic Synthetics API and Selenium WebDriver (for Browser monitors) or the $http object (for API monitors) to define the steps of your test and your assertions. New Relic provides an in-browser script or.
+Assertions: Define conditions that must be met for the monitor to be considered successful (e.g., status code, response body content, presence of elements on a page).
+SSL/DNS Specific Settings: Configure parameters relevant to SSL or DNS checks.
+Save and Run: Once you've configured your monitor, save it. New Relic will start running the monitor from the selected locations at the specified frequency.
+
+Benefits of Using New Relic Synthetic (Availability) Monitoring:
+
+Proactive Issue Detection: Identify problems before your real users experience them.
+Improved Uptime: Ensure the continuous availability of your critical applications and APIs.
+Global Performance Insights: Understand how your application performs from different geographical locations.
+Verification of Functionality: Validate that key user workflows are working as expected.
+SLA Monitoring: Track and verify your service level agreements (SLAs) for availability and response time.
+Faster Troubleshooting: Get early warnings about potential issues, allowing you to investigate and resolve them quickly.
+Third-Party Service Monitoring: Monitor the availability and performance of external services your application depends on.
+Best Practices for New Relic Synthetic Monitoring:
+
+Monitor Critical Paths: Focus on testing the most important user journeys and API endpoints.
+Choose Relevant Locations: Select locations that are representative of your user base.
+Set Appropriate Frequencies: Balance the need for timely alerts with the cost and load generated by frequent checks.
+Write Robust Scripts: For scripted monitors, ensure your scripts are resilient to minor UI changes or API variations.
+Implement Meaningful Assertions: Validate not just availability but also the correctness of your application's behavior.
+Configure Effective Alerting: Set up alerts to notify the right teams when monitors fail.
+Review and Maintain Your Monitors: Regularly check your monitors to ensure they are still relevant and functioning correctly.
+Combine with Real User Monitoring (RUM): Synthetic monitoring provides proactive insights, while RUM gives you real user experience data. Use them together for a comprehensive view.
+
+----------------------------------------------------------------------------------------------------------
+o	Creating and running synthetic tests
+----------------------------------------------------------------------------------------------------------
+lab 
+
+Prerequisites:
+
+You have a New Relic account and are logged in.
+You have navigated to the Synthetics section within New Relic One (usually under "Programmable Platform").
+General Steps to Create a Synthetic Monitor:
+
+Click "Create monitor": On the Synthetics overview page, you'll find a button to create a new monitor. Click it.
+
+Choose a Monitor Type: You'll be presented with different monitor types. Select the one that best suits your testing needs:
+
+Ping: For a simple check to see if a URL is reachable and responds.
+Simple Browser: Loads a webpage in a real browser and checks for basic availability and performance.
+Browser (Scripted Browser): Allows you to write JavaScript code using Selenium WebDriver to simulate complex user interactions.
+API Test (Scripted API): Enables you to write JavaScript code to make HTTP requests to APIs and validate responses.
+Multi-step API: Lets you define a sequence of API calls to test complex workflows without writing code.
+SSL Certificate: Checks the validity and expiration of an SSL/TLS certificate.
+DNS: Verifies DNS resolution for a given hostname.
+Configure Basic Settings: For most monitor types, you'll need to configure the following:
+
+Name: Give your monitor a descriptive name that helps you easily identify what it's testing.
+Locations: Select one or more geographic locations from which the monitor will run. Choose locations relevant to your user base. Keep in mind the current location (Thiruvananthapuram, Kerala, India) and consider testing from locations with good connectivity to your application and potentially from user-heavy regions.
+Frequency: Set how often the monitor should run (e.g., every 1, 5, 10, 15, 30, or 60 minutes). Choose a frequency that balances timely alerting with the number of checks performed.
+Configure Type-Specific Settings: The next steps depend on the monitor type you selected:
+
+a) Ping Monitor:
+
+URL to ping: Enter the URL you want to check for reachability.
+Expected status code (optional): You can specify an expected HTTP status code (e.g., 200).
+Timeout (optional): Set a maximum time to wait for a response.
+b) Simple Browser Monitor:
+
+URL to check: Enter the URL of the webpage.
+Validation (optional): You can add basic validations, such as checking for specific text on the page.
+Element timing (optional): Configure timing for specific elements.
+c) Browser (Scripted Browser) Monitor:
+
+Script: This is where you write your JavaScript code using the New Relic Synthetics API and Selenium WebDriver commands. The in-browser or provides helpful tools and examples. You'll typically:
+Navigate to URLs ($browser.get('your_url')).
+Interact with page elements (e.g., $browser.findElement($driver.By.id('login-button')).click()).
+Enter text into fields ($browser.findElement($driver.By.name('username')).sendKeys('your_username')).
+Make assertions using $browser.assert() or expect() from assertion libraries.
+Handle timeouts and errors.
+Script or: New Relic provides an integrated script or with syntax highlighting and basic validation.
+d) API Test (Scripted API) Monitor:
+
+Script: Write JavaScript code using the $http object to make API requests. You'll typically:
+Define request options (method, URL, headers, body).
+Make the request ($http.get(options) or $http.post(options)).
+Validate the response status code, headers, and body using assertions.
+Script or: Similar to the Scripted Browser, an in-browser or is available.
+e) Multi-step API Monitor:
+
+Steps: Define a sequence of API requests. For each step, you configure:
+HTTP Method (GET, POST, PUT, DELETE, etc.)
+URL
+Headers
+Request Body (for methods like POST and PUT)
+Assertions: Define rules to validate the response of each step (e.g., status code, JSON path assertions).
+You can pass data between steps using variables.
+f) SSL Certificate Monitor:
+
+Hostname: Enter the hostname of the website whose SSL certificate you want to monitor.
+Port (optional): Specify a port if it's not the default SSL port (443).
+Expiration threshold (days): Set the number of days before expiration when you want to receive a warning.
+g) DNS Monitor:
+
+Hostname to lookup: Enter the hostname you want to resolve.
+Expected IP address (optional): You can specify an expected IP address or a pattern.
+Record type (optional): Specify the DNS record type (e.g., A, CNAME, MX).
+Configure Alerting (Optional but Recommended):
+
+After creating your monitor, you'll likely want to set up alerts to be notified if the monitor fails. You can do this in the "Alerts" section of New Relic One and create alert conditions based on the status of your synthetic monitors.
+Save Your Monitor: Once you've configured all the necessary settings, click the "Save" button.
+
+Running Your Synthetic Tests:
+
+Automatic Scheduling: Once saved, your monitor will automatically start running from the selected locations at the configured frequency. You don't need to manually trigger them.
+Viewing Results: To see the results of your synthetic tests:
+Navigate back to the Synthetics section.
+You'll see a list of your monitors with their current status (Success, Failure, Warning).
+Click on a specific monitor to view detailed results, including:
+Run history: A record of each execution of the monitor.
+Performance metrics: Response times, DNS lookup times, connection times, etc. (depending on the monitor type).
+Error details: If a monitor fails, you'll see information about the error, including any assertion failures or script errors.
+Waterfall charts (for browser monitors): Visual representation of the loading of resources on the page.
+Request/response details (for API monitors).
+Manual Runs (Optional): In some cases, you might have the option to manually trigger a run of your monitor from the monitor's detail page. This can be useful for testing new scripts or configurations.
+Example: Creating a Simple Browser Monitor:
+
+Go to Synthetics and click "Create monitor."
+Choose "Simple Browser."
+Name: Homepage Availability
+Locations: Select a few locations relevant to your users (e.g., Mumbai, Singapore, London).
+Frequency: Set to "Every 5 minutes."
+URL to check: https://www.example.com (replace with your actual homepage URL).
+Validation (optional): Add a validation to check if the text "Welcome to Example" is present on the page. Click "Add a validation," select "Text on page," and enter "Welcome to Example."
+Click "Save."
+This monitor will now run every 5 minutes from your chosen locations, load the Example homepage, and verify that the text "Welcome to Example" is present. If the page fails to load or the text is missing, the monitor will fail, and you can configure alerts to be notified.
+
+----------------------------------------------------------------------------------------------------------
+o	Monitoring application uptime and availability
+----------------------------------------------------------------------------------------------------------
+lab 
+
+Monitoring application uptime and availability is crucial for ensuring a positive user experience and meeting service level agreements (SLAs). It involves continuously checking if your application is accessible and functioning correctly. Here's a comprehensive overview of strategies and tools you can use, keeping in mind the current date and location (Thiruvananthapuram, Kerala, India - Wednesday, March 19, 2025):
+
+Key Concepts:
+
+Uptime: The percentage of time your application is operational and available to users. Often measured over a specific period (e.g., monthly uptime of 99.9%).
+Availability: Similar to uptime, but often considers the application's ability to respond to user requests successfully. It can be affected by performance issues even if the application is technically "up."
+Synthetic Monitoring (Proactive): Simulating user interactions to proactively check availability and basic functionality from various locations.
+Real User Monitoring (RUM) (Passive): Collecting data from actual user sessions to understand their experience and identify availability issues they might encounter.
+Infrastructure Monitoring: Tracking the health and performance of the underlying infrastructure that supports your application (servers, networks, databases, etc.).
+Alerting: Setting up notifications to inform the right teams when availability issues are detected.
+Strategies and Tools:
+
+1. Synthetic Monitoring (Proactive Checks):
+
+Tools:
+New Relic Synthetics: As discussed previously, offers various monitor types (Ping, Simple Browser, Scripted Browser, API, Multi-step API, SSL, DNS) to simulate user interactions and check availability from global locations.
+Uptrends: Another popular synthetic monitoring platform with a wide range of monitor types and global checkpoints.
+Pingdom (SolarWinds): Offers website speed and availability monitoring with real browser checks and transaction monitoring.
+Datadog Synthetics: Integrated with the Datadog observability platform, providing similar capabilities to New Relic and Uptrends.
+Amazon CloudWatch Synthetics (Canaries): Allows you to create configurable scripts to monitor your application endpoints and APIs.
+Azure Monitor Synthetic Transactions: Provides similar capabilities within the Azure ecosystem.
+How to Use:
+Monitor Critical Paths: Focus on simulating key user journeys (e.g., login, search, checkout).
+Choose Relevant Locations: Select monitoring locations that are geographically relevant to your user base, including potential locations within India if your primary users are there. Consider network latency from Thiruvananthapuram to your application's hosting location.
+Set Appropriate Frequencies: Balance the need for timely alerts with the cost and load generated by frequent checks.
+Implement Assertions: Validate not just availability but also the correctness of responses and the presence of key elements.
+Monitor APIs: For backend services, use API monitors to check the health and response of critical endpoints.
+2. Real User Monitoring (RUM) (Passive Data Collection):
+
+Tools:
+New Relic Browser: Injects a JavaScript snippet into your web pages to collect performance data from real user sessions, including page load times, JavaScript errors, and geographical performance. Availability issues encountered by users will often manifest as errors or very long load times.
+Datadog RUM: Provides similar real-time visibility into the performance and user experience of web and mobile applications.
+Dynatrace: Offers comprehensive digital experience monitoring, including RUM.
+Google Analytics: While primarily an analytics tool, significant drops in traffic or high bounce rates can sometimes indicate availability issues.
+Cloud provider-specific RUM solutions: AWS CloudWatch RUM, Azure Application Insights.
+How to Use:
+Implement the RUM Agent: Add the provided code snippet to your web application.
+Analyze Performance Data: Look for trends in load times, error rates, and user behavior that might indicate availability problems for specific user segments or geographical locations.
+Segment by Geography: Analyze user experience specifically for users in and around Thiruvananthapuram to identify any localized issues.
+3. Infrastructure Monitoring:
+
+Tools:
+New Relic Infrastructure: Monitors the health and performance of your servers, containers (Docker, Kubernetes), cloud resources (AWS, Azure, GCP), databases, and networks.
+Datadog Infrastructure Monitoring: Provides comprehensive infrastructure visibility.
+Prometheus and Grafana: Open-source tools widely used for collecting and visualizing infrastructure and application metrics.
+Amazon CloudWatch: Monitors AWS resources.
+Azure Monitor: Monitors Azure resources.
+Google Cloud Monitoring: Monitors GCP resources.
+How to Use:
+Monitor Key Metrics: Track CPU utilization, memory usage, disk I/O, network traffic, and the health of critical services.
+Set Alerts on Infrastructure Issues: Configure alerts for high resource usage, service outages, or other infrastructure problems that could impact application availability.
+Correlate Infrastructure Issues with Application Performance: Use monitoring data to understand if infrastructure problems are the root cause of application downtime or performance degradation.
+4. Application Performance Monitoring (APM):
+
+Tools:
+New Relic APM: Provides deep insights into the performance of your application code, including transaction traces, error rates, slow queries, and external service dependencies.
+Datadog APM: Offers similar detailed application performance analysis.
+Dynatrace APM: Provides AI-powered application performance monitoring.
+AppDynamics (Cisco): A comprehensive APM solution.
+OpenTelemetry: An open-source observability framework that can be used with various backends.
+How to Use:
+Monitor Error Rates: A sudden increase in application errors can indicate an availability issue.
+Track Response Times: High latency can make your application unusable, even if it's technically "up."
+Identify Dependencies: Understand how the health and performance of upstream and downstream services affect your application's availability.
+Set Alerts on Application Errors and Performance Degradation.
+5. Logging and Error Tracking:
+
+Tools:
+New Relic Logs: Centralized log management for easier searching and analysis.
+Datadog Logs: Integrated logging platform.
+ELK Stack (Elasticsearch, Logstash, Kibana): A popular open-source logging solution.
+Loki and Promtail: Another open-source logging stack designed for Kubernetes.
+Sentry: Primarily focused on error tracking and reporting.
+Rollbar: Another error monitoring platform.
+Cloud provider logging services: AWS CloudWatch Logs, Azure Monitor Logs, Google Cloud Logging.
+How to Use:
+Centralize Logs: Aggregate logs from all application components and infrastructure.
+Set Up Error Tracking: Use dedicated error tracking tools to capture and analyze application exceptions.
+Correlate Logs with Monitoring Data: Use logs to get more detailed context when availability issues are detected by other monitoring tools.
+Set Alerts on Critical Errors.
+6. Status Pages:
+
+Tools:
+Statuspage (Atlassian): A dedicated service for communicating the status of your systems to your users.
+Cachet: An open-source status page system.
+Cloud provider status page services: AWS Health Dashboard, Azure Service Health, Google Cloud Status Dashboard.
+How to Use:
+Integrate with Monitoring Tools: Automatically update your status page based on alerts from your monitoring systems.
+Provide Transparency to Users: Keep your users informed about outages and maintenance.
+Best Practices for Monitoring Uptime and Availability:
+
+Define Clear SLAs: Establish measurable uptime and availability targets for your applications.
+Implement a Comprehensive Monitoring Strategy: Use a combination of synthetic, RUM, infrastructure, and application monitoring.
+Set Up Actionable Alerts: Ensure alerts are specific, provide enough context, and are routed to the appropriate teams.
+Automate Remediation Where Possible: For known and recurring issues, consider automating recovery processes.
+Regularly Review and Refine Your Monitoring Setup: As your application evolves, your monitoring needs may change.
+Monitor Dependencies: Track the health and availability of critical third-party services your application relies on.
+Consider Geographic Factors: Especially for users in locations like Thiruvananthapuram, factor in potential network latency and regional outages.
+Establish Incident Response Procedures: Have a clear plan for how to respond when availability issues occur.
+----------------------------------------------------------------------------------------------------------
+6.	New Relic Logs
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Introduction to log management
+----------------------------------------------------------------------------------------------------------
+
+
+
+1. What is Log Management?
+Log management is the process of collecting, storing, analyzing, and monitoring log data from applications, servers, and cloud environments. Logs provide crucial insights into system behavior, application errors, security events, and performance metrics.
+
+New Relic’s Log Management helps teams centralize logs, correlate them with other observability data, and troubleshoot issues efficiently.
+
+2. Key Features of New Relic Log Management
+2.1. Centralized Log Collection
+Ingest logs from multiple sources, including applications, servers, and cloud services.
+Supports structured (JSON) and unstructured logs.
+Native integration with Kubernetes, AWS, Azure, and on-premises environments.
+2.2. Powerful Querying and Filtering
+Use NRQL (New Relic Query Language) to search and analyze logs.
+Filter logs by application, service, error type, or custom attributes.
+Identify patterns and anomalies in real time.
+2.3. Log Correlation with APM and Infrastructure
+Link logs to Application Performance Monitoring (APM) and Infrastructure Monitoring.
+View logs alongside traces and metrics for full-stack observability.
+Detect root causes faster by correlating logs with system performance.
+2.4. Alerts and Anomaly Detection
+Set up log-based alerts to detect errors, security threats, or unusual activity.
+Get notified via Slack, PagerDuty, email, or other integrations.
+Use AI-powered insights to detect anomalies in logs.
+2.5. Secure and Scalable Storage
+Retain logs based on your custom retention policy.
+Role-Based Access Control (RBAC) ensures logs are only accessible by authorized users.
+Encrypted log storage for enhanced security and compliance.
+3. How to Set Up Log Management in New Relic
+3.1. Enable Log Forwarding
+To send logs to New Relic, use one of the following methods:
+
+Using New Relic Log Forwarder (Fluent Bit)
+Install Fluent Bit on your system:
+sh
+
+
+curl -fsSL https://download.newrelic.com/logging/fluent-bit/install.sh | 
+Configure Fluent Bit to send logs to New Relic:
+sh
+
+
+@INCLUDE input.conf
+@INCLUDE filter.conf
+@INCLUDE output.conf
+Restart Fluent Bit:
+sh
+
+
+systemctl restart fluent-bit
+Using AWS CloudWatch, Azure Monitor, or Google Cloud Logging
+Configure New Relic to ingest logs from your cloud provider.
+Use New Relic’s built-in integrations for AWS, Azure, or Google Cloud.
+Using New Relic API for Custom Log Ingestion
+Send logs via HTTP API:
+
+
+sh
+
+
+curl -X POST "https://log-api.newrelic.com/log/v1" \
+  -H "X-Insert-Key: YOUR_LICENSE_KEY" \
+  -H "Content-Type: application/json" \
+  -d '[
+        {
+          "message": "Application started",
+          "timestamp": 1678901234567,
+          "service": "my-app",
+          "level": "info"
+        }
+      ]'
+4. Analyzing Logs in New Relic
+Go to New Relic One → Click on Logs.
+Use search filters to find specific logs.
+Correlate logs with application traces and infrastructure metrics.
+Create custom dashboards to monitor important log events.
+5. Benefits of Using New Relic for Log Management
+✅ Faster troubleshooting with correlated logs and APM data.
+✅ Improved security with real-time log monitoring and alerts.
+✅ Scalable ingestion for logs from on-prem, cloud, and hybrid environments.
+✅ Customizable dashboards for log visualization and analysis.
+
+
+----------------------------------------------------------------------------------------------------------
+o	Collecting and visualizing logs in New Relic
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Correlating logs with APM and infrastructure data
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+
+Day 6
+
+7.	New Relic Alerts & Incident Management
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Setting up alert policies
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Configuring thresholds and notification channels
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Incident management and integrations
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+Day 7
+
+8.	New Relic Insights
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Introduction to New Relic Insights
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Querying and visualizing data with NRQL (New Relic Query Language)
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Creating custom dashboards
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+
+9.	New Relic Distributed Tracing
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	What is distributed tracing?
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Using distributed tracing to monitor service dependencies
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Visualizing traces and troubleshooting latency issues
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+
+Day 8 and Day 9
+
+10.	Integrations with New Relic
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Integrating with AWS cloud,
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Monitoring the lambda execution using New relics 
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Integrating with Docker and monitoring Docker containers and infrastructure
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Integrating with Kubernetes and monitoring Kubernetes infrastructure along with pods
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Connecting with third-party tools (e.g. Slack)
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+
+Day 10
+
+11.	New Relic AI and Machine Learning Capabilities
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Introduction to New Relic AI
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Using AI to detect anomalies
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+o	Automating incident responses with AI
+----------------------------------------------------------------------------------------------------------
+lab 
+----------------------------------------------------------------------------------------------------------
+
+
+Day 11
+12.	Best Practices for Using New Relic
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Optimizing performance monitoring
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Effective alert management
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Troubleshooting with New Relic
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+Day 12
+13.	New Relic API
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Introduction to New Relic API
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Using the API to query data
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Automating tasks with the New Relic API
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+Day 13
+
+14.	Case Studies and Real-World Use Cases
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	How companies use New Relic to improve performance and reliability
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+o	Success stories from various industries
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+

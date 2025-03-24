@@ -1,0 +1,81 @@
+1. What is New Relic?
+
+a. A cloud-based infrastructure monitoring tool
+b. A software development lifecycle management tool
+c. A comprehensive observability platform
+d. A cybersecurity threat detection tool
+Answer: c) A comprehensive observability platform
+
+2. What are the core components of New Relic?
+
+APM, Infrastructure, Logs, Synthetics
+APM, Infrastructure, Logs, Metrics
+APM, Infrastructure, Logs, Security
+APM, Infrastructure, Logs, AI
+Answer: b) APM, Infrastructure, Logs, Metrics
+
+3. What does APM stand for in New Relic?
+
+Application Performance Monitoring
+Advanced Performance Monitoring
+Automated Performance Management
+Accelerated Performance Management
+Answer: a) Application Performance Monitoring
+
+4. What is the primary function of New Relic Infrastructure?
+
+To monitor the performance of applications
+To monitor the health of servers and infrastructure
+To analyze logs for errors and anomalies
+To synthesize user experience data
+Answer: b) To monitor the health of servers and infrastructure
+
+5. New Relic Features and Functionality
+What is a metric in New Relic?
+
+A numerical value that represents a measurement of a system
+A textual description of a system's performance
+A visual representation of a system's health
+A statistical analysis of a system's behavior
+Answer: a) A numerical value that represents a measurement of a system
+
+6. What is a trace in New Relic?
+
+A record of a single request or transaction
+A timeline of events that occur over time
+A statistical summary of performance data
+A visualization of system dependencies
+Answer: a) A record of a single request or transaction
+
+7. What is a log in New Relic?
+
+A structured record of events
+An unstructured record of events
+A visual representation of events
+A statistical analysis of events
+Answer: b) An unstructured record of events
+
+8. What is a synthetic monitor in New Relic?
+
+A real user monitoring tool
+A server-side performance monitoring tool
+A simulated user experience monitoring tool
+A network performance monitoring tool
+Answer:c)  A simulated user experience monitoring tool
+
+9. New Relic Implementation and Configuration
+How can you integrate New Relic with your application?
+
+By installing an agent
+By using API calls
+By configuring a proxy server
+By modifying the application code
+Answer: a) By installing an agent
+
+10. What is a New Relic alert condition?
+
+A specific event that triggers an alert
+A predefined set of alert rules
+A notification channel for alerts
+A visual representation of alert data
+Answer: a) A specific event that triggers an alert
