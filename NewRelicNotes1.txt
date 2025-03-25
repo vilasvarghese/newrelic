@@ -1,3 +1,11 @@
+New relic config: /etc/newrelic-infra/newrelic-infra.yml
+ls /etc/newrelic*
+/etc/newrelic.yaml
+
+https://github.com/newrelic/infrastructure-agent/blob/master/assets/examples/infrastructure/newrelic-infra-template.yml.example
+
+
+
 1.	Introduction to New Relic
 
 ----------------------------------------------------------------------------------------------------------
@@ -1194,6 +1202,8 @@ lab
 ----------------------------------------------------------------------------------------------------------
 o	Setting alerts for infrastructure anomalies
 ----------------------------------------------------------------------------------------------------------
+Do along with Synthetic monitoring 
+
 ----------------------------------------------------------------------------------------------------------
 
 Day 4
